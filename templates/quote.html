@@ -1,15 +1,18 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="quote.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body class="alert alert-danger">
+<body class="alert alert-secondary">
     
-    <div id="quote-container" class="mx-auto my-3 text-center">
-        <h4><p id="quote">{{ quote }}</p></h4>
-        <button id="new-quote" onclick="window.location.reload()" class="btn btn-primary">New Quote</button>
-    </div>
+    <div class="container">
+  <div class="mx-auto my-3 text-center">
+    <h4><p id="quote">{{ quote }}</p></h4>
+    <button id="new-quote" onclick="window.location.reload()" class="btn btn-primary">New Quote</button>
+  </div>
+</div>
+
     
 </body>
   
